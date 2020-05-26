@@ -1,0 +1,18 @@
+@font-face{
+    font-family:"utm-bebas";
+    src:url("UTM Bebas.ttf") format("woff"),
+    url("UTM Bebas.ttf") format("opentype"),
+    url("UTM Bebas.ttf") format("truetype");
+}
+.fbebas{
+    font-family: utm-bebas;
+}
+@font-face{
+    font-family:"utm-cafeta";
+    src:url("UTM Cafeta.ttf") format("woff"),
+    url("UTM Cafeta.ttf") format("opentype"),
+    url("UTM Cafeta.ttf") format("truetype");
+}
+.fcafeta{
+    font-family: utm-cafeta;
+}
