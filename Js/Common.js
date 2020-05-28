@@ -175,6 +175,45 @@ $(document).ready(function() {
 			}
 		});
 	}
+	if ($(".other-new .new-item").size() > 1) {
+		let owl = $(".other-new .group").addClass('owl-carousel owl-theme').owlCarousel({
+			items: 3,
+			loop: true,
+			animateIn: "fadeIn",
+			animateOut: "fadeOut",
+			autoplay: false,
+			autoplayTimeout: 5000,
+			dots: false,
+			nav: true,
+			navText: [],
+			lazyLoad: true,
+			autoplayHoverPause: true,
+			smartSpeed: 1500,
+			margin: 30,
+			responsive : {
+				0: {
+					items: 1,
+					margin: 0
+				},
+				479: {
+					items: 1,
+					margin: 0
+				},
+				767: {
+					items: 2,
+					margin: 20
+				},
+				991: {
+					items: 3,
+					margin: 30
+				},
+				1199: {
+					items: 3,
+					margin: 30
+				}
+			}
+		});
+	}
 	jQuery(".tab-links a").on("click", function(n) {
 		var t = jQuery(this).attr("href");
 		jQuery(".collapse " + t).fadeIn(400).siblings().hide();
