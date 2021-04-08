@@ -18,10 +18,15 @@
 </style>
 </head>
 <body>
-	<div id="fb-root"></div>
-    
-	<a target="_blank" href="01-Khung-Mau.html">01-Trangchu.html</a>
-	<a target="_blank" href="02-Dichvu.html">02-Dichvu.html</a>
-	
+	<button id="clickMe">alone</button>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		var btn = document.getElementById("clickMe");
+		btn.addEventListener("click", loadvcard);
+		function loadvcard(){
+			var data = "BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ADoe%3BJohn%0AFN%3AJohn%20Doe%0ATITLE%3A08002221111%0AORG%3AStackflowover%0AEMAIL%3BTYPE%3DINTERNET%3Ajohndoe%40gmail.com%0AEND%3AVCARD";
+			window.open("data:text/x-vcard;urlencoded," + data);
+		}
+	</script>
 </body>
 </html>
